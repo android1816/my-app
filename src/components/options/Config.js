@@ -56,11 +56,11 @@ class Config extends React.Component {
         {list.map((item) => (
             <>
               <Card
-                style={{ width: "100%", marginBottom: "20px" }}
+                style={{ width: "100%", marginBottom: "20px", height: "100%"}}
                 cover={
                   <img
                     alt="example"
-                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    src={`https://source.unsplash.com/random/500x500?sig=incrementingIdentifier${Math.random()}`}
                   />
                 }
               >
