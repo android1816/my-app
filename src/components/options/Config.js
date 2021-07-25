@@ -63,10 +63,11 @@ class Config extends React.Component {
                     src={`https://source.unsplash.com/random/500x500?sig=incrementingIdentifier${Math.random()}`}
                   />
                 }
+                onClick={this.showDrawer}
               >
                 <Meta
                   description={
-                    <a onClick={this.showDrawer}>Configuration</a>
+                    <a >Configuration</a>
                   }
                 />
               </Card>

@@ -68,10 +68,11 @@ class Info extends React.Component {
                     src={`https://source.unsplash.com/random/500x500?sig=incrementingIdentifier${Math.random()}`}
                   />
                 }
+                onClick={this.showDrawer}
               >
                 <Meta
                   description={
-                    <a onClick={this.showDrawer}>Show Information</a>
+                    <a >Show Information</a>
                   }
                 />
               </Card>
