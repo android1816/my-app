@@ -263,19 +263,17 @@ hr{
 }
 
 .form-config .edit-form{
-  background: #e4e4e4ad;
+  background: hsla(120, 4%, 91%, 0.685);;
   flex-grow: 2;
   padding: 10px 40px;
+  
 }
 
 .form-config .edit-info{
   width: 25%;
-  background: #e4e4e4ad;
+  background: hsla(120, 4%, 91%, 0.685);
   flex-grow: 2;
   padding: 10px 40px;
 }
 
-.ant-tabs-tab{
-  font-size: 24px;
-}
 
