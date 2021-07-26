@@ -136,6 +136,12 @@ hr{
   margin-top: 20px;
 }
 
+.lib{
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom: 10px;
+}
+
 .col-15 .advanced .config{
   height: 100%;
 }
@@ -177,19 +183,21 @@ hr{
 .col-2 .header .open-close{
   font-size: 25px;
   margin-left: 15px;
-  height: inherit;
   color: rgb(255, 255, 255);
   line-height: 50px;
   transition: all .2s ease-in;
 }
 
-.col-2 .header .stream{
+.col-2 .header .capture{
   margin: 0 20px;
   height: 50px;
   line-height: 47px;
+  font-size: 30px;
+  color: #ffffff;
+  display: flex;
 }
 
-.col-2 .header .stream button{
+.col-2 .header .capture button{
   padding: 7px 10px;
   border-radius: 5px;
   transition-duration: 0.4s;
@@ -199,11 +207,11 @@ hr{
   cursor: pointer;
 }
 
-.col-2 .header .stream button:hover{
+.col-2 .header .capture button:hover{
   background-color: #4CAF50;
   color: white;
 }
-.col-2 .header .all-stream{
+.col-2 .header .all-capture{
   margin-right: 20px;
 }
 

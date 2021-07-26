@@ -1,7 +1,8 @@
 import React from "react";
+import WebcamCapture from './WebCam';
 
 const Main = (props) => {
-  const { option, listVideo } = props;
+  const { capture, listVideo } = props;
 
   return (
     <div className="main">
@@ -14,6 +15,7 @@ const Main = (props) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      {/* <WebcamCapture check={capture}/> */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'antd';
 
 const item = [""]
 const LiveView = (props) => {
@@ -12,22 +13,24 @@ const LiveView = (props) => {
 
           <input type="text" placeholder="search" />
         </div>
-        {
-          listVideo.map((item) => (
-            <div className="sub-stream">
-              <iframe
-                width="100%"
-                height="auto"
-                src={item.link}
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <p>DD:MM:YY ss:mm:hh</p>
+        {listVideo.map((item) => (
+          <div className="sub-stream">
+            <iframe
+              width="100%"
+              height="auto"
+              src={item.link}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div style={{width: "100px", display:"inline-block", alignItems:"center", }} >
+              <Button type="primary" ghost>
+                VIEW
+              </Button>
             </div>
-          ))
-        }
+          </div>
+        ))}
       </div>
     );
 }

@@ -9,7 +9,7 @@ const InfoItem = [
         option: "LiveView",
     },
     {
-        name: "Picture",
+        name: "Library",
         icon: "bi bi-card-image",
         option: "Picture",
     },

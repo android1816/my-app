@@ -1,26 +1,44 @@
-import React from 'react'
-import { MenuFoldOutlined } from "@ant-design/icons";
+import React from "react";
+import { Tooltip, Button } from "antd";
+import {
+  MenuFoldOutlined,
+  CameraOutlined,
+  VideoCameraAddOutlined,
+} from "@ant-design/icons";
+
+const record = <span>Record</span>;
+const captureImg = <span>Capture</span>;
+
+const buttonWidth = 70;
+
 const Header = (props) => {
+  const sendData = (option) => {
+    props.parentCallback(option);
+  };
 
-    const sendData = (option) => {
-        props.parentCallback(option);
-    }
+  const capture = (capture) => {
+    props.capture(capture);
+  };
 
-    const viewAll = (viewAll) => {
-      props.viewAll(viewAll);
-    }
-    
-    return (
-      <>
-        <div className="open-close" onClick={()=>sendData(null)}>
-          <MenuFoldOutlined />
+  return (
+    <>
+      <div className="open-close" onClick={() => sendData(null)}>
+        <MenuFoldOutlined />
+      </div>
+      <div className="capture" onClick={() => capture(true)}>
+        <div style={{ marginRight: "30px" }}>
+          <Tooltip placement="bottom" title={captureImg}>
+            <CameraOutlined />
+          </Tooltip>
         </div>
-        <div className="stream">
-          {/* <button className="all-stream btn5-hover" onClick = {()=>viewAll(true)}>All Stream</button> */}
-          {/* <button className="sub-stream btn5-hover"> Sub Stream</button> */}
+        <div style={{ marginRight: "10px" }}>
+          <Tooltip placement="bottom" title={record}>
+            <VideoCameraAddOutlined />
+          </Tooltip>
         </div>
-      </>
-    );
-}
+      </div>
+    </>
+  );
+};
 
 export default Header;
