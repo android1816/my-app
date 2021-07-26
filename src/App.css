@@ -219,6 +219,7 @@ hr{
 }
 
 .col-2 .content .main{
+  height: calc(100vh - 60px);
 }
 
 /* width */
