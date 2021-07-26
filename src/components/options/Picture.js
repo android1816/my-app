@@ -30,7 +30,7 @@ const Picture = (props) => {
             height="100%"
             src={`https://picsum.photos/id/${Math.floor(
               Math.random() * 500
-            )}/500/500`}
+            )}/800/800`}
           />
         </div>
       ))}

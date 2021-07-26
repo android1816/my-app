@@ -10,7 +10,7 @@ const DescriptionItem = ({ title, content }) => (
 
 export default function Drawerr() {
     return (
-        <div>
+        <>
              <p className="site-description-item-profile-p" style={{ marginBottom: 24 }}>
             User Profile
           </p>
@@ -75,18 +75,6 @@ export default function Drawerr() {
               <DescriptionItem title="Phone Number" content="+84 181 0000 0000" />
             </Col>
           </Row>
-          <Row>
-            <Col span={24}>
-              <DescriptionItem
-                title="Github"
-                content={
-                  <a href="http://github.com/ant-design/ant-design/">
-                    github.com/ant-design/ant-design/
-                  </a>
-                }
-              />
-            </Col>
-          </Row>
-        </div>
+        </>
     )
 }

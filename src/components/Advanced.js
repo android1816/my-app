@@ -24,10 +24,10 @@ const Advanced = (props) => {
               return <Picture listVideo={listVideo} />;
               
             case "Config":
-                return <Config />;
+                return <Config listVideo={listVideo} />;
             
             case "Info":
-                return <Info />;
+                return <Info listVideo={listVideo} />;
 
             case "Account":
                 return <div>Info</div>;
